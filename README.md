@@ -30,6 +30,12 @@ These docs emerged from building 10+ shots for a product trailer entirely throug
 | [composition-structure.md](composition-structure.md) | Bookend motifs, split composition, content mosaic, subtitle bars, scene transitions |
 | [generation-visualization.md](generation-visualization.md) | Progressive denoising, scan-line reveals, glitch artifacts, "Generating..." status |
 
+### Production Breakdowns (reverse-engineered from reference videos)
+
+| Document | What it covers |
+|----------|---------------|
+| [production-breakdown.md](production-breakdown.md) | Shot-by-shot Luma Uni-1 teardown: layer stacks, compositing chains, how each visual was built, replication priority |
+
 ## Key Principles
 
 **Shape layers over solids.** Solids show rectangular edges through blur. Shape layer ellipses don't. Use solids only for full-frame layers (BG, adjustment layers, vignettes).
