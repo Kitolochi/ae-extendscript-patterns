@@ -6,6 +6,8 @@ These docs emerged from building 10+ shots for a product trailer entirely throug
 
 ## Guides
 
+### Core Patterns (from production builds)
+
 | Document | What it covers |
 |----------|---------------|
 | [gotchas.md](gotchas.md) | API traps, property name mismatches, null references, range errors |
@@ -16,6 +18,16 @@ These docs emerged from building 10+ shots for a product trailer entirely throug
 | [expressions.md](expressions.md) | Fade patterns, pulse/breathe, typing animation, conditional values, looping, wrapping |
 | [post-effects.md](post-effects.md) | Vignette, film grain, entry/exit transitions |
 | [bridge-architecture.md](bridge-architecture.md) | File-polling bridge, helper functions, build script structure, diagnostics |
+
+### Advanced Techniques (from studying professional launch videos)
+
+| Document | What it covers |
+|----------|---------------|
+| [particle-systems.md](particle-systems.md) | Sparse fields, sphere constellation formation, slow rotation, code particles, performance limits |
+| [title-treatments.md](title-treatments.md) | Embossed/carved text, reveal wipes, scale-from-zero, tracking expand, light sweep |
+| [ui-mockups.md](ui-mockups.md) | Typing animation, product UI cards, thumbnail grids, input fields, button states |
+| [hud-overlays.md](hud-overlays.md) | Leader lines, numerical readouts, corner brackets, scan lines, ambient grids |
+| [composition-structure.md](composition-structure.md) | Bookend motifs, split composition, content mosaic, subtitle bars, scene transitions |
 
 ## Key Principles
 
@@ -35,6 +47,11 @@ These docs emerged from building 10+ shots for a product trailer entirely throug
 - **Node.js + tsx** for build scripts
 - **File-polling bridge** at `C:/tmp/ae-mcp-bridge/`
 - **ExtendScript ES3** — `var` only, no `let`/`const`, no arrow functions
+
+## References
+
+Visual techniques studied from professional product launch videos:
+- **Luma Labs Uni-1** (Mar 2026) — particle constellation formation, embossed title cards, typing animation UI, HUD data overlays, content mosaic grid, bookend narrative structure
 
 ## Context
 
