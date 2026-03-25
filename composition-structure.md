@@ -36,6 +36,21 @@ closing.opacity.expression = [
 
 The closing version fades slower than the opening appears. Entrances feel best at 12-18 frames; exits work better at 24-30 frames. Asymmetric pacing prevents the bookend from feeling mechanical.
 
+### Luma Uni-1 Bookend Timeline
+
+The particle field serves as the bookend motif. Opening (t=3-9) shows particles scattered then converging. Closing (t=55-57) shows the same particles in a relaxed scatter. Between them: 46 seconds of content showcasing the product.
+
+| Section | Time | Duration |
+|---------|------|----------|
+| Opening particle field | 0:03-0:09 | 6s |
+| Sphere formation + hero shot | 0:09-0:16 | 7s |
+| Product demos (UI, generation, content) | 0:17-0:52 | 35s |
+| Content mosaic | 0:53-0:55 | 2s |
+| Closing particle field | 0:55-0:57 | 2s |
+| Final title + logo | 0:57-1:00 | 3s |
+
+The opening gets more time (6s) because it establishes the visual language. The closing is shorter (2s) — the audience already recognizes the motif.
+
 ## Split Composition (Text + Visual)
 
 Frame divided into two zones: typography on one side, visual element on the other. The Luma video at t=15 places "UNI-1" on the left third and the particle sphere on the right two-thirds.
@@ -61,9 +76,12 @@ visual.position.setValue([1200, 540]);  // right-biased center
 **Safe zones for split compositions:**
 | Layout | Left zone | Right zone |
 |--------|-----------|------------|
+| 1/6 + 5/6 | x: 100-380 | x: 550-1820 |
 | 1/3 + 2/3 | x: 100-580 | x: 660-1820 |
 | 1/2 + 1/2 | x: 100-860 | x: 1060-1820 |
 | 2/3 + 1/3 | x: 100-1260 | x: 1340-1820 |
+
+The Luma Uni-1 split at t=14-16 uses a narrow 1/6 left zone for "UNI-1" text (x≈320, ~160px font) with the particle cloud filling the remaining 5/6. The text sits at vertical center (y=540).
 
 The 80px gap between zones (the "gutter") prevents elements from feeling crowded. Title-safe margin: 100px from all edges.
 
@@ -115,6 +133,22 @@ for (var i = 0; i < tileData.length; i++) {
 **Stagger timing**: 4 frames between tiles gives a smooth cascade. 2 frames is too fast to perceive individual entrances. 8+ frames makes the grid feel sluggish. For 6 tiles at 4-frame stagger, the full cascade takes 36 frames (0.6s).
 
 Tile sizes should follow a clear hierarchy: 1-2 large tiles, 2-4 medium tiles. A uniform grid reads as a gallery; mixed sizes read as editorial layout.
+
+### Luma Uni-1 Mosaic Reference (t=53)
+
+The content mosaic at t=53 uses an irregular grid of 12-15 image tiles:
+
+| Property | Value |
+|----------|-------|
+| Large tiles | ~300×250px (2-3 of these) |
+| Small tiles | ~120×120px (8-10 of these) |
+| Gap | 8-12px between tiles |
+| Tile rotation | ±2-3 degrees (subtle, not all tiles) |
+| Parallax drift | ~0.3px/frame (barely perceptible float) |
+| Background | pure black |
+| Duration | 2 seconds before dissolving to closing particle field |
+
+The images show mixed styles (portraits, illustrations, manga, 3D renders, photography) to demonstrate range. Some tiles overlap slightly for a casual, organic feel rather than rigid alignment.
 
 ## Subtitle Bar
 

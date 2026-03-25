@@ -23,11 +23,12 @@ These docs emerged from building 10+ shots for a product trailer entirely throug
 
 | Document | What it covers |
 |----------|---------------|
-| [particle-systems.md](particle-systems.md) | Sparse fields, sphere constellation formation, slow rotation, code particles, performance limits |
+| [particle-systems.md](particle-systems.md) | Sparse fields, 4-phase constellation (band→burst→converge→sphere), dual-color hemispheres, dispersal, precise timing values |
 | [title-treatments.md](title-treatments.md) | Embossed/carved text, reveal wipes, scale-from-zero, tracking expand, light sweep |
 | [ui-mockups.md](ui-mockups.md) | Typing animation, product UI cards, thumbnail grids, input fields, button states |
 | [hud-overlays.md](hud-overlays.md) | Leader lines, numerical readouts, corner brackets, scan lines, ambient grids |
 | [composition-structure.md](composition-structure.md) | Bookend motifs, split composition, content mosaic, subtitle bars, scene transitions |
+| [generation-visualization.md](generation-visualization.md) | Progressive denoising, scan-line reveals, glitch artifacts, "Generating..." status |
 
 ## Key Principles
 

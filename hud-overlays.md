@@ -52,6 +52,23 @@ label.position.setValue([labelX, labelY]);
 
 **Wide letter tracking** (200+ thousandths of an em) is the single strongest signal that text is "technical" rather than "readable." Combined with monospace font and small size (12-16px), it reads as instrument-panel typography.
 
+### Luma Uni-1 Infographic Reference (t=33-35)
+
+The generated Golden Gate Bridge infographic at t=33-35 shows a professional technical annotation style:
+
+| Property | Value |
+|----------|-------|
+| Background | charcoal ~#1a1a1a |
+| Wireframe color | orange/amber ~[1.0, 0.4, 0.0] (#ff6a00) |
+| Annotation text | white, monospace, ~12-14px, tracking 200+ |
+| Leader line weight | 1px, white 60% opacity |
+| Panel widths | main ~500px, side ~200-250px each |
+| Panel corner radius | ~6px |
+| Horizontal pan speed | ~40px/sec (slow reveal) |
+| Labels | ALL CAPS, e.g. "SUSPENSION SYSTEM", "MAIN CABLE", "TOWER" |
+
+The horizontal pan (camera sliding right) reveals panels progressively. Slow enough to read each label (~40px/sec), fast enough to maintain visual energy.
+
 ## Animated Draw-On Line
 
 The leader line draws itself from label to target, rather than appearing instantly.

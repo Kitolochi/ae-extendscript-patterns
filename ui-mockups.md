@@ -33,7 +33,15 @@ textLayer.sourceText.expression = [
 ].join('\\n');
 ```
 
-**12 chars/second** feels natural for a human typing a prompt. Faster than 20 chars/sec reads as autocomplete, not human input. The cursor continues blinking for 90 frames (1.5s at 60fps) after typing finishes, then disappears.
+### Typing Speed Reference (from Luma Uni-1)
+
+| Speed | Chars/sec | Feel | Use case |
+|-------|-----------|------|----------|
+| 8-12 | Slow | Human typing | User-initiated prompts |
+| 20-30 | Medium | Fast typist | Autocomplete/suggestion |
+| 40-50 | Fast | Machine speed | Model reasoning/thinking text |
+
+The Luma video types at ~47 chars/sec (70 chars in 1.5s), presented as the model's internal reasoning rather than human input. For user-facing typing, 12 chars/sec feels natural. The cursor continues blinking for 90 frames (1.5s at 60fps) after typing finishes, then disappears.
 
 ## Product UI Card (Light Theme)
 
@@ -68,10 +76,32 @@ shadow.property("Softness").setValue(20);
 shadow.property("Shadow Color").setValue([0, 0, 0]);
 ```
 
-For light-theme UI cards:
+### Luma Uni-1 Card Measurements
+
+Extracted from the product UI mockup at t=17-19:
+
+| Property | Value |
+|----------|-------|
+| Card size | ~440×350px |
+| Card position | left-of-center (x≈620, y≈450) |
+| Card fill | white [0.98, 0.98, 0.98] |
+| Corner radius | ~12px |
+| Border | none (shadow only) |
+| Shadow opacity | 10-12% |
+| Shadow distance | ~4px |
+| Shadow softness | ~20px |
+| Thumbnail size | ~80×80px |
+| Thumbnail radius | ~8px |
+| Thumbnail gap | ~16px |
+| Text color | dark gray ~[0.2, 0.2, 0.2] |
+| Text font size | ~18px sans-serif |
+| Send button | blue circle, ~36px diameter, white up-arrow |
+| Background | light gray gradient, neutral |
+
+For light-theme UI cards in general:
 - Card fill: [0.96-0.99, 0.96-0.99, 0.96-0.99] — off-white
-- Border: 1px, [0.85-0.90] gray
-- Shadow: 12% opacity, 4px distance, 20px softness
+- Border: none or 1px [0.85-0.90] gray
+- Shadow: 10-12% opacity, 4px distance, 20px softness
 - Corner radius: 12-16px for modern, 8px for conservative
 
 ## Thumbnail Grid Inside Card
